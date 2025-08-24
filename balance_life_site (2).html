@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravnovesje v življenju</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Glava -->
+  <header class="bg-green-600 text-white p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Ravnovesje v življenju</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#podrocja" class="hover:underline">Področja</a></li>
+          <li><a href="#omeni" class="hover:underline">O meni</a></li>
+          <li><a href="#blog" class="hover:underline">Blog</a></li>
+          <li><a href="#webinar" class="hover:underline">Webinar</a></li>
+          <li><a href="#kontakt" class="hover:underline">Kontakt</a></li>
+          <li><a href="/admin" class="hover:underline">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero sekcija -->
+  <section class="bg-green-100 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Najdi ravnovesje v svojem življenju</h2>
+    <p class="text-lg mb-6">Zdravje • Prehrana • Gibanje • Sproščanje • Spanje</p>
+    <a href="#kontakt" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">Stopi v stik</a>
+  </section>
+
+  <!-- Področja ravnovesja -->
+  <section id="podrocja" class="container mx-auto py-16 px-6 grid md:grid-cols-5 gap-6">
+    <div class="bg-white shadow-md p-6 rounded-xl text-center">
+      <h3 class="text-xl font-semibold mb-2">Zdravje</h3>
+      <p class="text-gray-600">Celosten pristop k telesnemu in duševnemu zdravju.</p>
+    </div>
+    <div class="bg-white shadow-md p-6 rounded-xl text-center">
+      <h3 class="text-xl font-semibold mb-2">Prehrana</h3>
+      <p class="text-gray-600">Pravilno ravnovesje hranil za vitalnost in energijo.</p>
+    </div>
+    <div class="bg-white shadow-md p-6 rounded-xl text-center">
+      <h3 class="text-xl font-semibold mb-2">Gibanje</h3>
+      <p class="text-gray-600">Redna aktivnost za moč, gibljivost in dobro počutje.</p>
+    </div>
+    <div class="bg-white shadow-md p-6 rounded-xl text-center">
+      <h3 class="text-xl font-semibold mb-2">Sproščanje</h3>
+      <p class="text-gray-600">Tehnike sprostitve za zmanjšanje stresa.</p>
+    </div>
+    <div class="bg-white shadow-md p-6 rounded-xl text-center">
+      <h3 class="text-xl font-semibold mb-2">Spanje</h3>
+      <p class="text-gray-600">Kakovosten spanec kot temelj ravnovesja.</p>
+    </div>
+  </section>
+
+  <!-- O meni -->
+  <section id="omeni" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h2 class="text-3xl font-bold mb-6">O meni</h2>
+      <p class="text-lg text-gray-700">Moje poslanstvo je pomagati ljudem vzpostaviti ravnovesje v življenju skozi zdravje, prehrano, gibanje, sproščanje in spanec. Verjamem, da lahko s celostnim pristopom dosežemo večjo kakovost življenja.</p>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Blog</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Netlify CMS bo tukaj dodajal objave -->
+      <p class="text-gray-600 text-center w-full">Tukaj se bodo prikazovale najnovejše objave iz bloga.</p>
+    </div>
+  </section>
+
+  <!-- Webinar -->
+  <section id="webinar" class="bg-green-50 py-16 px-6 text-center">
+    <div class="container mx-auto max-w-2xl">
+      <h2 class="text-3xl font-bold mb-6">Pridruži se mojemu brezplačnemu webinarju</h2>
+      <p class="text-lg text-gray-700 mb-6">Spoznaj praktične tehnike za vzpostavitev ravnovesja v vsakdanjem življenju. Na webinarju bomo govorili o zdravju, prehrani, gibanju, sproščanju in spanju.</p>
+      <a href="#kontakt" class="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700">Prijavi se zdaj</a>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-6">Kontakt</h2>
+    <form class="max-w-xl mx-auto bg-white shadow-md p-6 rounded-xl">
+      <input type="text" placeholder="Ime" class="w-full p-3 mb-4 border rounded-lg">
+      <input type="email" placeholder="Email" class="w-full p-3 mb-4 border rounded-lg">
+      <textarea placeholder="Sporočilo" class="w-full p-3 mb-4 border rounded-lg"></textarea>
+      <button class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 w-full">Pošlji</button>
+    </form>
+  </section>
+
+  <!-- Noga -->
+  <footer class="bg-green-600 text-white text-center py-6">
+    <p>&copy; 2025 Ravnovesje v življenju. Vse pravice pridržane.</p>
+  </footer>
+
+  <!-- Netlify CMS script -->
+  <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+</body>
+</html>
+
+<!-- Admin panel -->
+<!-- V svojem projektu ustvari mapo /admin z dvema datotekama: index.html in config.yml -->
+
+<!-- /admin/index.html -->
+<!--
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
+  </body>
+</html>
+-->
+
+<!-- /admin/config.yml -->
+<!--
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+-->
